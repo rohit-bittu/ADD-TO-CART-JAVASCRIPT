@@ -33,15 +33,15 @@
                                 <div class="col-md-7 col-11 mx-auto px-4 mt-2">
                                     <div class="row">
                                         <!-- product name -->
-                                        <div class="col-6 card-title">
+                                        <div class="card-title col-6 text-size">
                                             <h1 class="mb-4 product_name">White Shirt</h1>
-                                            <p class="mb-2">SHIRT - WHITE</p>
-                                            <p class="mb-2">COLOR: WHITE</p>
-                                            <p class="mb-3">SIZE: M</p>
-                                            <p class="mb-3">PRICE : <b>$15</b></p>
+                                            <p class="mb-2">SHIRT-<b> WHITE</b></p>
+                                            <p class="mb-2">COLOR:<b>WHITE</b></p>
+                                            <p class="mb-3">SIZE: <b>M</b></p>
+                                            <p class="mb-3">PRICE:<b> $15</b></p>
                                         </div>
                                         <!-- qualtity increment decrement-->
-                                        <div class="col-6">
+                                        <div class="col-6 ">
                                             <ul class="pagination justify-content-end set_quantity ">
                                                 <li class="page-item"><button class="page-link" onclick="decreaseNumber('textbox','itemval')"><i class="fa-solid fa-minus"></i></button></li>
                                                 <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox"></input></li>
@@ -51,13 +51,19 @@
                                         </div>
                                     </div>
                                     <!-- remover move and price -->
+                                    <div class="row text-size-remover">
+                                        <div class="col-6 d-flex justify-content-between remove_wish ">
+                                            <p class=""><i class="fa-solid fa-trash-alt te"></i>REMOVE ITEM</p> 
+                                            
+                                        </div> <br>
+                                        <div class="col-6 d-flex justify-content-between remove_wish ">
+                                             
+                                            <p class=""><i class="fa-solid fa-heart"></i>MOVE TO WISHLIST</p>
+                                        </div> <br>
+                                    </div>
                                     <div class="row">
-                                        <div class="col-8 d-flex justify-content-between remove_wish">
-                                            <p class=""><i class="fa-solid fa-trash-alt"></i> REMOVE ITEM</p>
-                                            <p class=""><i class="fa-solid fa-heart"></i> MOVE TO WISHLIST</p>
-                                        </div>
-                                        <div class="col-4 d-flex justify-content-end price_money">
-                                            <h3>$<span id="itemval">0.00</span></h3>
+                                        <div class="col-12 d-flex justify-content-start price_money">
+                                            <h3>Total:</h3>&nbsp;&nbsp;&nbsp;<h3>$<span id="itemval">0.00</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -76,12 +82,12 @@
                                 <div class="col-md-7 col-11 mx-auto px-4 mt-2">
                                     <div class="row">
                                         <!-- product name -->
-                                        <div class="col-6 card-title">
+                                        <div class="col-6 card-title text-size">
                                             <h1 class="mb-4 product_name">Pink Shirt</h1>
-                                            <p class="mb-2">SHIRT - PINK</p>
-                                            <p class="mb-2">COLOR: PINK</p>
-                                            <p class="mb-3">SIZE: M</p>
-                                            <p class="mb-3">PRICE : <b>$15</b></p>
+                                            <p class="mb-2">SHIRT-<b>PINK</b></p>
+                                            <p class="mb-2">COLOR:<b>PINK</b></p>
+                                            <p class="mb-3">SIZE: <b>M</b></p>
+                                            <p class="mb-3">PRICE :<b>$15</b></p>
                                         </div>
                                         <!-- qualtity increment decrement-->
                                         <div class="col-6">
@@ -94,13 +100,19 @@
                                         </div>
                                     </div>
                                     <!-- remover move and price -->
+                                    <div class="row text-size-remover">
+                                        <div class="col-6 d-flex justify-content-between remove_wish ">
+                                            <p class=""><i class="fa-solid fa-trash-alt te"></i>REMOVE ITEM</p> 
+                                            
+                                        </div> <br>
+                                        <div class="col-6 d-flex justify-content-between remove_wish ">
+                                             
+                                            <p class=""><i class="fa-solid fa-heart"></i>MOVE TO WISHLIST</p>
+                                        </div> <br>
+                                    </div>
                                     <div class="row">
-                                        <div class="col-8 d-flex justify-content-between remove_wish">
-                                            <p class=""><i class="fa-solid fa-trash-alt"></i> REMOVE ITEM</p>
-                                            <p class=""><i class="fa-solid fa-heart"></i> MOVE TO WISHLIST</p>
-                                        </div>
-                                        <div class="col-4 d-flex justify-content-end price_money">
-                                            <h3>$<span id="itemval1">0.00</span></h3>
+                                        <div class="col-12 d-flex justify-content-start price_money">
+                                            <h3>Total:</h3>&nbsp;&nbsp;&nbsp;<h3>$<span id="itemval1">0.00</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +133,7 @@
                             </div>
                             <hr/>
                             <div class="total_amount d-flex justify-content-between fw-bold">
-                                <p>The total amount of (includint VAT)</p>
+                                <p>The total amount of (including VAT)</p>
                                 <p>$<span id="total_cart_amt">0.00</span></p>
                             </div>
                             <button class="btn btn-primary  text-uppercase" onclick="Checkout()"> Checkout</button>
